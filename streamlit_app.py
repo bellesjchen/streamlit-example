@@ -19,13 +19,13 @@ st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
 
 col1, col2 ,col3= st.columns(3)
 with col1:
-     color1 = st.color_picker('pick the starting color', RRR(%d,%d,%d),key=1)
+     color1 = st.color_picker('pick the starting color', rgb(%d,%d,%d),key=1)
      st.write(f"you picked {color1}")
 with col2:
-     color2 = st.color_picker('pick the ending color', GGG(%d,%d,%d),key=2)
+     color2 = st.color_picker('pick the ending color', rgb(%d,%d,%d),key=2)
      st.write(f"you picked {color2}")
 with col3:
-     color3 = st.color_picker('pick the text color', BBB(%d,%d,%d),key=3)
+     color3 = st.color_picker('pick the text color', rgb(%d,%d,%d),key=3)
      st.write(f"you picked {color3}")
 text=st.text_input(" the text you want to input")
 
