@@ -3,7 +3,7 @@ import altair as alt
 import math
 import pandas as pd
 import streamlit as st
-import requests as req
+import requests
 import json
 
 st.markdown('Streamlit is **_really_ cool**.')
