@@ -14,7 +14,7 @@ response.json()
 st.markdown('Streamlit is **_really_ cool**.')
 st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
 
-col1, col2 ,col3= st.beta_columns(3)
+col1, col2 ,col3= st.columns(3)
 with col1:
      color1 = st.color_picker('pick the starting color', '#1aa3ff',key=1)
      st.write(f"you picked {color1}")
