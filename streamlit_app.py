@@ -9,8 +9,11 @@ import json
 st.markdown('Streamlit is **_really_ cool**.')
 st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
 
+def query():
+    url = 'http://colormind.io/api/'
+    response = req.get(url, data={"model":"default"}
+    )
+    print(response.json)
 
-data = '{"model":"default"}'
-response = requests.post('http://colormind.io/api/', data=data)
-response.json()
 
+query()
