@@ -14,4 +14,4 @@ data = '{"model":"default"}'
 response = requests.post('http://colormind.io/api/', data=data)
 response.json()
 
-{'result': [[71, 94, 97], [109, 152, 137], [183, 213, 193], [243, 239, 204], [240, 153, 122]]}
+{'result': ["hello","World"]}
