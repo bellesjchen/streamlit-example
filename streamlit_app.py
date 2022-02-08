@@ -18,5 +18,5 @@ B1 = color_list['result'][0][2]
 
 st.markdown('I am trying **_cool_ api**.')
 st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
-if st.button('change the word's color'):
+if st.button('change the word color'):
  st.markdown('<p style="font-family:sans-serif; color:r1g1b1(%d,%d,%d); font-size: 42px;">color changed</p >' %(R1,G1,B1),unsafe_allow_html=True)
