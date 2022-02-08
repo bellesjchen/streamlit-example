@@ -10,7 +10,15 @@ import requests
 
 data = '{"model":"default"}'
 response = requests.post('http://colormind.io/api/', data=data)
-st.write(response.json())
+color_list = response.json()
+R1 = color_list['result'][0][0]
+G1 = color_list['result'][0][1]
+B1 = color_list['result'][0][2]
 
-st.markdown('Streamlit is **_really_ cool**.')
+c = '<p style="font-family:sans-serif; color:rgb(%d,%d,%d); font-size: 42px;">New image</p >
+
+
+st.markdown('I am trying **_cool_ api**.')
 st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
+if st.button('change the word's color'):
+ st.markdown('<p style="font-family:sans-serif; color:r1g1b1(%d,%d,%d); font-size: 42px;">color changed</p >' %(R,G,B),unsafe_allow_html=True)
